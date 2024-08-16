@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formularioRegistro.css">
+    <script src="formularioRegistro.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Cadastro Twitch</title>
+</head>
+<body>
+    
+    
+
+    <section class="cadastro">
+        
+        <img class="imagemTwitch" src="https://logos-world.net/wp-content/uploads/2020/11/Twitch-Logo.png">
+       
+        <h1 class="titulo">Cadastre sua conta Twitch</h1>
+
+        <div class="info">
+            <label>Nome de Usuário:</label>
+            <input class="entradaDeDados" id="user" type="text" placeholder="User ID">
+        </div>
+
+        <div class="info">
+            <label>E-mail:</label>
+            <input class="entradaDeDados" id="email" type="email" placeholder="E-mail">
+        </div>
+
+        <div class="info">
+            <label>Senha:</label>
+            <input class="entradaDeDados" id="senha" type="password" placeholder="Password">
+        </div>
+
+        <div class="dataDeNascimento">
+            <label>Data de Nascimento:</label>
+            <input class="data" id="nascimento" type="date">
+        </div>
+
+        <div class="generos">
+            <label>Qual o seu genero?</label>
+            <div class="generoH">
+                <input class="inputGenero" id="inputHomem" type="radio" name="gender" value="Homem">
+                <label for="Homem">Homem </label>
+            </div>
+            <div class="generoM">
+                <input class="inputGenero" id="inputMulher" type="radio" name="gender" value="Mulher">
+                <label for="Mulher">Mulher</label>
+            </div>
+
+            <div class="generoO">
+                <input class="inputGenero" id="inputOutro" type="radio" name="gender" value="Outro">
+                <label for="Outro">Outro </label>
+            </div>
+        </div>
+
+        <div class="termos">
+            <label><u>Li e concordo com os </u><a href="https://i.imgflip.com/21cvoz.jpg">Termos de Serviço</a></label>
+            <input  class="termosDeUso" id="termosDeUso" type="checkbox">
+        </div>
+
+        
+        <button class="botaoCadastro" type="button" onclick="enviar()">Concluir cadastro</button>
+
+    </section>
+
+</body>
+</html>
